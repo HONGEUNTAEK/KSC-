@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>KSC</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_ksc">
+            <div class="logo">
+                <img src="./img/ksc.png" alt="#">
+            </div>
+            <div class="header_menu">
+                <p>회사소개</p>
+                <p>제품소개</p>
+                <p>구입절차</p>
+                <p>경비업허가절차</p>
+                <p>약제교환안내</p>
+                <p>납품·거래처</p>
+            </div>
+            <div class="header_nav">
+                <img src="./img/serch.png" alt="#">
+                <img src="./img/shop.png" alt="#">
+                <img src="./img/profile.png" alt="#">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="main_product">
+            .product_
+            <h1>NEW PRODUCT</h1>
+            <p>대한안전공 제품들로 안전을 지키세요.</p>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }, 
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
