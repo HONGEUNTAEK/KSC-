@@ -1,5 +1,4 @@
 /* 초기화 */
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,15 +6,14 @@
 }
 
 /* header */
-
-header{
+header {
     width: 100%;
     height: 10vh;
     background-color: #121212;
-    border-bottom: 0.5px solid #ADB5BD;
+    border-bottom: 0.5px solid #adb5bd;
 }
 
-.header_ksc{
+.header_ksc {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,56 +23,56 @@ header{
     gap: 150px;
 }
 
-.logo > img{
+.logo>img {
     width: 180px;
 }
 
-.header_menu{
+.header_menu {
     color: white;
     display: flex;
     gap: 30px;
     font-size: 18px;
 }
 
-.header_nav{
+.header_nav {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.header_nav > img{
+.header_nav>img {
     width: 21px;
     height: 21px;
 }
 
-/* 메인 */
-
-.mySwiper{
+/* 메인 배너 Swiper */
+.mySwiper {
     width: 100%;
     height: 700px;
 }
 
-.swiper-slide:nth-child(1){
+.mySwiper .swiper-slide:nth-child(1) {
     background-image: url(./img/main_banner1.png);
     background-size: cover;
 }
 
-.swiper-slide:nth-child(2){
+.mySwiper .swiper-slide:nth-child(2) {
     background-image: url(./img/main_banner2.png);
     background-size: cover;
 }
 
-.swiper-slide:nth-child(3){
+.mySwiper .swiper-slide:nth-child(3) {
     background-image: url(./img/main_banner3.png);
     background-size: cover;
 }
 
-.swiper-slide:nth-child(4){
+.mySwiper .swiper-slide:nth-child(4) {
     background-image: url(./img/main_banner4.png);
     background-size: cover;
 }
 
-.main_product{
+/* 메인 제품 영역 */
+.main_product {
     width: 100%;
     height: 800px;
     display: flex;
@@ -84,15 +82,15 @@ header{
     background-image: url(./img/productBack.png);
 }
 
-.main_product > h1 {
+.main_product>h1 {
     font-size: 45px;
     font-weight: bold;
     margin: 40px 0 0 0;
 }
 
-.main_product > p {
+.main_product>p {
     font-size: 18px;
-    color: #868E96;
+    color: #868e96;
 }
 
 .product_menu {
@@ -104,4 +102,137 @@ header{
     font-size: 20px;
     font-weight: bold;
     margin: 30px 0 0 0;
+}
+
+/* 제품용 Swiper */
+.productSwiper {
+    width: 65%;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.productSwiper .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.productSwiper .swiper-slide:nth-child(1) {
+    background-image: url(./img/product1.png);
+}
+
+.productSwiper .swiper-slide:nth-child(2) {
+    background-image: url(./img/product2.png);
+}
+
+.productSwiper .swiper-slide:nth-child(3) {
+    background-image: url(./img/product3.png);
+}
+
+.productSwiper .swiper-slide:nth-child(4) {
+    background-image: url(./img/product4.png);
+}
+
+/* 버튼 색상 + 위치 */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #888;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+/* hover 시 색상 */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: white;
+}
+
+/* 배너용 버튼 위치 */
+.mySwiper .swiper-button-prev {
+    left: 200px;
+}
+
+.mySwiper .swiper-button-next {
+    right: 200px;
+}
+
+.swiper-pagination {
+    margin: 0 0 20px 0;
+    display: none;
+}
+
+/* 제품용 버튼 위치 */
+.productSwiper .swiper-button-prev {
+    display: none;
+}
+
+.productSwiper .swiper-button-next {
+    display: none;
+}
+
+/* weapon_type */
+
+.weapon_type {
+    width: 100%;
+    height: 1000px;
+    background-image: url(./img/weapon_typeBack.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* weapon_type swiper */
+
+.weapon_type > .mySwiper {
+    height: 1150px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide:nth-child(1) {
+    background-image: url(./img/weapon_type1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+swiper-slide:nth-child(2) {
+    background-image: url(./img/weapon_type2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+swiper-slide:nth-child(3) {
+    background-image: url(./img/weapon_type3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+swiper-slide:nth-child(4) {
+    background-image: url(./img/weapon_type4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.AD {
+    width: 100%;
+    height: 100%;
+    margin: 300px 0 160px 0;
+}
+
+.footer>img {
+    width: 100%;
+    height: 500px;
 }

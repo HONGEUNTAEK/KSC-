@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>KSC</title>
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="header_ksc">
             <div class="logo">
-                <img src="./img/ksc.png" alt="#">
+                <img src="./img/ksc.png" alt="#" />
             </div>
             <div class="header_menu">
                 <p>회사소개</p>
@@ -24,13 +25,16 @@
                 <p>납품·거래처</p>
             </div>
             <div class="header_nav">
-                <img src="./img/serch.png" alt="#">
-                <img src="./img/shop.png" alt="#">
-                <img src="./img/profile.png" alt="#">
+                <img src="./img/serch.png" alt="#" />
+                <img src="./img/shop.png" alt="#" />
+                <img src="./img/profile.png" alt="#" />
             </div>
         </div>
     </header>
+
+    <!-- main -->
     <main>
+        <!-- 메인 배너 -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"></div>
@@ -38,11 +42,14 @@
                 <div class="swiper-slide"></div>
                 <div class="swiper-slide"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+            <!-- 개별 버튼 및 페이지네이션 -->
+            <div class="swiper-button-next main-next"></div>
+            <div class="swiper-button-prev main-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
 
+        <!-- 제품 섹션 -->
         <div class="main_product">
             <h1>NEW PRODUCT</h1>
             <p>대한안전공 제품들로 안전을 지키세요.</p>
@@ -52,10 +59,40 @@
                 <li>호신용품</li>
                 <li>경호 · 경비용품</li>
                 <li>생활안전용품</li>
-            </ul>      
+            </ul>
+
+            <!-- 제품용 Swiper -->
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+
+                <div class="swiper-button-next product-next"></div>
+                <div class="swiper-button-prev product-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="weapon_type">
+            <swiper-container class="mySwiper" scrollbar-hide="true">
+                <swiper-slide>Slide 1</swiper-slide>
+                <swiper-slide>Slide 2</swiper-slide>
+                <swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>Slide 4</swiper-slide>
+            </swiper-container>
+        </div>
+
+        <img src="./img/AD.png" alt="#" class="AD">
+
+        <div class="footer">
+            <img src="./img/footer.png" alt="#">
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
